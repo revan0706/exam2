@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "a m"
+    "a f";
+  grid-template-columns: 250px auto;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+header {
+  grid-area: h;
+}
+aside {
+  grid-area: a;
+}
+main {
+  grid-area: m;
+}
+footer {
+  grid-area: f;
+}
+
+@media (max-width: 1000px) {
+  body {
+    grid-template-areas:
+      "h h"
+      "m m"
+      "f f";
+  }
+  aside {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  main > article {
+    flex-direction: column;
+  }
+}

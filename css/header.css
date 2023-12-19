@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 14px 0px;
+}
+header > nav.horMenu a {
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  font-size: 21px;
+}
+header > nav.horMenu a:hover {
+  background-color: white;
+  color: black;
+}
+header > nav.horMenu a.active {
+  background-color: rgb(63, 63, 63);
+}
+header > nav.horMenu a.active:hover {
+  background-color: #ccc;
+}
